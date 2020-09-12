@@ -1,0 +1,1 @@
+# terraform-aws-s3-subdomain-take-over
