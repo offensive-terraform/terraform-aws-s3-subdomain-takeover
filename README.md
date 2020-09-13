@@ -21,6 +21,10 @@ module "s3-subdomain-takeover" {
 
     subdomain = "subdomain.example.com"
 }
+
+output "s3_website_endpoint" {
+  value = module.s3-subdomain-takeover.s3_website_endpoint
+}
 ```
 ## Author
 Module managed by https://github.com/iganbold
