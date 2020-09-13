@@ -26,7 +26,7 @@ EOF
 resource "aws_s3_bucket_object" "this" {
   bucket       = var.subdomain
   key          = "payload.html"
-  source       = "./payload.html"
+  source       = ".terraform/modules/s3-subdomain-takeover/payload.html"
   content_type = "text/html"
 
   depends_on = [aws_s3_bucket.this]
